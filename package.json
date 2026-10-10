@@ -1,0 +1,12 @@
+{
+  "name": "frooti-scroll-experience",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A scroll-only product animation built from the supplied Frooti video. Zero runtime dependencies.",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js && node --check js/app.js && node --check js/sequence.js"
+  },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffed28">
+  <meta name="description" content="A little sunshine. A lot of mango. Explore an independent, scroll-powered FROOTI product experience. Your scroll brings the story to life.">
+  <title>FROOTI &mdash; Mango. Full volume.</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/poster.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/sequence.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#vibe">Skip the animated experience</a>
+<header class="site-header" id="header">
+  <a class="wordmark" href="#experience" aria-label="Frooti, back to the beginning">FROOTI<span class="brand-leaf" aria-hidden="true"></span></a>
+  <span class="header-tagline">MANGO STATE<br>OF MIND.</span>
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    <a href="#experience" class="nav-link">The experience</a>
+    <a href="#vibe" class="nav-link">The vibe</a>
+    <a href="#moments" class="nav-link">Your moment</a>
+  </nav>
+  <div class="header-actions">
+    <button class="motion-button" id="motion-toggle" aria-pressed="true" title="Turn scroll animation on or off"><span class="status-dot" aria-hidden="true"></span><span id="motion-label">Motion on</span></button>
+    <button class="round-button help-button" id="help-open" aria-label="How this experience works">?</button>
+    <button class="menu-button" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+  </div>
+</header>
+<main id="main">
+  <section class="experience" id="experience" aria-labelledby="hero-title">
+    <div class="stage" id="stage">
+      <div class="stage-texture" aria-hidden="true"></div>
+      <div class="ghost-word" id="ghost-word" aria-hidden="true">FROOTI</div>
+      <div class="orbit" id="orbit" aria-hidden="true"><span class="orbit-dot"></span></div>
+      <div class="product-shadow" id="product-shadow" aria-hidden="true"></div>
+      <div class="product-stage" role="img" aria-label="A Frooti bottle rotates, its cap opens, and mango drink pours out as you scroll. Scrolling backwards reverses the sequence.">
+        <img id="product-poster" class="product-poster" src="assets/images/poster.webp" alt="" width="640" height="1252" fetchpriority="high">
+        <canvas id="product-canvas" aria-hidden="true"></canvas>
+      </div>
+      <div class="scene-copy scene-copy-left" data-phase="0">
+        <p class="eyebrow"><span class="eyebrow-line"></span>Not just a drink. A mood.</p>
+        <h1 class="display-title" id="hero-title"><span>MANGO.</span><span>FULL</span><span>VOLUME.</span></h1>
+        <p class="scene-description">A little sunshine. A lot of mango.<br>Your next good mood starts here.</p>
+        <a class="text-cta" href="#vibe">Find your mango mood <span class="small-arrow" aria-hidden="true">&#8599;</span></a>
+      </div>
+      <div class="scene-copy scene-copy-right" data-phase="1" aria-hidden="true" inert>
+        <p class="eyebrow"><span class="eyebrow-line"></span>A twist in the story.</p>
+        <h2 class="display-title"><span>OPEN UP.</span><span>LET THE</span><span>GOOD IN.</span></h2>
+        <p class="scene-description">One little twist.<br>A whole new state of mind.</p>
+        <span class="scene-caption">Keep scrolling. It's getting good.</span>
+      </div>
+      <div class="scene-copy scene-copy-left" data-phase="2" aria-hidden="true" inert>
+        <p class="eyebrow"><span class="eyebrow-line"></span>Here comes the good part.</p>
+        <h2 class="display-title"><span>LET</span><span>MANGO</span><span>LOOSE.</span></h2>
+        <p class="scene-description">Big mango energy.<br>Not a single ordinary moment.</p>
+        <span class="scene-caption">Go on. Make a little splash.</span>
+      </div>
+      <div class="scene-copy scene-copy-left" data-phase="3" aria-hidden="true" inert>
+        <p class="eyebrow"><span class="eyebrow-line"></span>And just like that.</p>
+        <h2 class="display-title"><span>THAT'S</span><span>THE</span><span>FEELING.</span></h2>
+        <p class="scene-description">Some things just hit different.<br>This is one of them.</p>
+        <a class="text-cta" href="#moments">Make it your moment <span class="small-arrow" aria-hidden="true">&#8599;</span></a>
+      </div>
+      <div class="sun-badge" id="sun-badge" aria-hidden="true">
+        <svg viewBox="0 0 160 160"><defs><path id="badge-circle" d="M80,80 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><circle cx="80" cy="80" r="77" fill="currentColor"/><text><textPath href="#badge-circle" startOffset="0%">GOOD VIBES. GREAT TIMES. GOOD VIBES. GREAT TIMES.</textPath></text><path class="mango-icon" d="M77 56c-19-5-35 8-30 32 3 17 22 27 37 14 17-15 31-39 10-45-6-2-12 1-17-1Zm1-1c-1-15 7-23 22-21-3 15-10 22-22 21Z"/></svg>
+        <span class="badge-plus">+</span>
+      </div>
+      <div class="side-note" id="side-note"><span>NO RUSH.</span><span>JUST SCROLL.</span><svg viewBox="0 0 24 40" fill="none" aria-hidden="true"><path d="M12 1v35M2 26l10 11 10-11" stroke="currentColor" stroke-width="1.3"/></svg></div>
+      <div class="scene-footer">
+        <div class="scroll-caption"><span class="scroll-symbol" aria-hidden="true">&#8595;</span><div><strong>Your scroll. Your story.</strong><span id="frame-label">SCROLL TO UNBOTTLE</span></div></div>
+        <div class="chapter-track" aria-label="Experience chapters">
+          <button class="chapter active" data-chapter="0" aria-label="Jump to chapter 1: The icon" aria-current="step"><span class="chapter-rule"><i></i></span><span class="chapter-label"><b>01</b> The icon</span></button>
+          <button class="chapter" data-chapter="1" aria-label="Jump to chapter 2: The twist"><span class="chapter-rule"><i></i></span><span class="chapter-label"><b>02</b> The twist</span></button>
+          <button class="chapter" data-chapter="2" aria-label="Jump to chapter 3: The pour"><span class="chapter-rule"><i></i></span><span class="chapter-label"><b>03</b> The pour</span></button>
+          <button class="chapter" data-chapter="3" aria-label="Jump to chapter 4: The feeling"><span class="chapter-rule"><i></i></span><span class="chapter-label"><b>04</b> The feeling</span></button>
+        </div>
+        <span class="story-percent" id="story-percent" aria-hidden="true">000%</span>
+      </div>
+      <div class="sequence-status" id="sequence-status" role="status" aria-live="polite" hidden></div>
+    </div>
+  </section>
+
+  <section class="vibe-section" id="vibe" aria-labelledby="vibe-title">
+    <div class="section-kicker" data-reveal><span class="eyebrow">The good-mood club</span><span class="section-index">01 &mdash; THE VIBE</span></div>
+    <div class="vibe-heading">
+      <h2 class="section-title" id="vibe-title" data-reveal>LESS ORDINARY.<br><span class="outline-text">MORE MANGO.</span></h2>
+      <div class="vibe-intro" data-reveal><span class="asterisk" aria-hidden="true">&#10035;</span><p>For the plans you make.<br>The ones you don't.<br>And everything in between.</p><a class="underlined-link" href="#moments">Find your kind of day <span aria-hidden="true">&#8599;</span></a></div>
+    </div>
+    <div class="vibe-cards">
+      <article class="vibe-card card-green" data-reveal>
+        <div class="card-topline"><span>01 / THE ORIGINAL MOOD</span><span aria-hidden="true">&#8599;</span></div>
+        <h3>TURN UP<br>THE TASTE.</h3>
+        <div class="card-orbit" aria-hidden="true"></div>
+        <img src="assets/images/poster.webp" width="640" height="1252" alt="The yellow Frooti mango drink bottle" loading="lazy" decoding="async" class="card-product card-original" data-parallax="-20">
+        <div class="card-foot"><span>A little mango goes a long way.</span><span class="tiny-spark" aria-hidden="true">+</span></div>
+      </article>
+      <article class="vibe-card card-orange" data-reveal>
+        <div class="card-topline"><span>02 / GOOD THINGS INSIDE</span><span aria-hidden="true">&#8599;</span></div>
+        <h3>TWIST.<br>MEET BLISS.</h3>
+        <div class="card-disc" aria-hidden="true"></div>
+        <img src="assets/images/twist.webp" width="640" height="1252" alt="A Frooti bottle with its yellow cap lifted open" loading="lazy" decoding="async" class="card-product card-twist" data-parallax="25">
+        <div class="card-foot"><span>Open up a brighter kind of day.</span><span class="tiny-spark" aria-hidden="true">+</span></div>
+      </article>
+      <article class="vibe-card card-yellow" data-reveal>
+        <div class="card-topline"><span>03 / A LITTLE EXTRA ENERGY</span><span aria-hidden="true">&#8599;</span></div>
+        <h3>MAKE A<br>SPLASH.</h3>
+        <span class="card-outline-word" aria-hidden="true">WOW</span>
+        <img src="assets/images/pour.webp" width="640" height="1252" alt="Golden mango drink pouring from the open bottle" loading="lazy" decoding="async" class="card-product card-pour" data-parallax="-30">
+        <div class="card-foot"><span>Let the good moments overflow.</span><span class="tiny-spark" aria-hidden="true">+</span></div>
+      </article>
+    </div>
+  </section>
+
+  <div class="mango-marquee" aria-hidden="true"><div id="marquee-text">MANGO ON YOUR MIND. <span>&#10035;</span> SUNSHINE IN YOUR DAY. <span>&#10035;</span> MANGO ON YOUR MIND. <span>&#10035;</span> SUNSHINE IN YOUR DAY. <span>&#10035;</span></div></div>
+
+  <section class="moments-section" id="moments" aria-labelledby="moments-title">
+    <div class="section-kicker" data-reveal><span class="eyebrow">No occasion required.</span><span class="section-index">02 &mdash; YOUR MOMENT</span></div>
+    <div class="moments-layout">
+      <div class="moments-copy">
+        <h2 class="section-title" id="moments-title" data-reveal>ANY DAY.<br>YOUR WAY.</h2>
+        <p class="moments-intro" data-reveal>A slow afternoon or a spontaneous plan.<br>There's a mango mood for that.</p>
+        <div class="moment-tabs" role="tablist" aria-label="Choose your moment" data-reveal>
+          <button role="tab" id="tab-break" aria-controls="moment-panel" aria-selected="true" tabindex="0" data-moment="0"><span>01</span> The little break <span aria-hidden="true">&#8599;</span></button>
+          <button role="tab" id="tab-trip" aria-controls="moment-panel" aria-selected="false" tabindex="-1" data-moment="1"><span>02</span> The long way home <span aria-hidden="true">&#8599;</span></button>
+          <button role="tab" id="tab-company" aria-controls="moment-panel" aria-selected="false" tabindex="-1" data-moment="2"><span>03</span> The good company <span aria-hidden="true">&#8599;</span></button>
+        </div>
+      </div>
+      <div class="moment-panel" id="moment-panel" role="tabpanel" aria-labelledby="tab-break" tabindex="0" data-reveal>
+        <span class="moment-tag" id="moment-tag">OUT OF OFFICE. IN MY ELEMENT.</span>
+        <span class="moment-big-word" id="moment-big-word" aria-hidden="true">PAUSE.</span>
+        <div class="moment-sun" id="moment-sun" aria-hidden="true">&#10035;</div>
+        <img src="assets/images/poster.webp" width="640" height="1252" alt="Frooti, ready for your next mango moment" loading="lazy" decoding="async" class="moment-bottle">
+        <div class="moment-panel-bottom"><p id="moment-description">Close the laptop.<br>Open a little sunshine.</p><span class="moment-time" id="moment-time">THE 4 PM RESET</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-section" id="good-times" aria-labelledby="closing-title">
+    <div class="closing-top" data-reveal><span class="eyebrow">That feeling? Keep it.</span><span class="closing-star" aria-hidden="true">&#10035;</span></div>
+    <h2 id="closing-title" data-reveal>GOOD TIMES.<br><span>ON REPEAT.</span></h2>
+    <div class="closing-bottom" data-reveal><p>Same mango mood.<br>A whole new way to experience it.</p><a href="#experience" class="replay-button">One more twist <span aria-hidden="true">&#8593;</span></a></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <a class="wordmark footer-wordmark" href="#experience" aria-label="Back to Frooti experience">FROOTI<span class="brand-leaf" aria-hidden="true"></span></a>
+  <div class="footer-copy"><span>MANGO. FULL VOLUME.</span><p>Independent design concept. Not an official store.<br>Brand names and product assets belong to their respective owners.</p></div>
+  <button class="footer-help" id="footer-help">How to explore <span aria-hidden="true">&#8599;</span></button>
+</footer>
+<dialog class="help-dialog" id="help-dialog" aria-labelledby="help-title">
+  <div class="dialog-top"><span class="eyebrow">A different kind of play button.</span><button class="round-button" id="help-close" aria-label="Close instructions">&#215;</button></div>
+  <h2 id="help-title">YOU SET<br>THE PACE.</h2>
+  <p>Scroll down to turn the bottle, open the cap, and let the mango pour. Scroll up to rewind. Stop scrolling, and the bottle stops with you.</p>
+  <div class="help-steps"><div><b>01</b><span>Scroll to move</span></div><div><b>02</b><span>Stop to pause</span></div><div><b>03</b><span>Go up to rewind</span></div></div>
+  <p class="help-small">No autoplay. No sound. Use the chapter controls to jump to a moment, or turn motion off in the header. On a phone, swipe vertically.</p>
+  <button class="solid-button" id="help-done">Let's feel it <span aria-hidden="true">&#8599;</span></button>
+</dialog>
+<noscript><div class="noscript-note">This page works as a static product showcase. Enable JavaScript to use the scroll-controlled bottle animation.</div></noscript>
+</body>
+</html>

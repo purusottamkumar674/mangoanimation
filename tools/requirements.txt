@@ -1,0 +1,4 @@
+# Only for rebuilding video assets. Not needed to run the website.
+opencv-python
+pillow
+numpy
